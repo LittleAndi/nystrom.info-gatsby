@@ -1,10 +1,14 @@
 import React from "react"
-import { Row, Col, Container, ListGroup } from "react-bootstrap"
+import { Row, Col, Container, ListGroup, Card, Button } from "react-bootstrap"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+
+import travelImage from "../images/img_8074_318x180.webp"
+import workImage from "../images/kryssning_318x180.webp"
+import spareTimeImage from "../images/loro_parque_318x180.webp"
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
@@ -12,57 +16,43 @@ const IndexPage = () => (
     <Container className="text-center">
       <Row>
         <Col>
-          <p>
-            This is a Gatsby Starter that I frequently use to get jump started
-            on quick website builds. It includes the following packages:
-          </p>
+          <Card style={{ width: "20rem", minHeight: "25rem" }}>
+            <Card.Img variant="top" src={travelImage} />
+            <Card.Body>
+              <Card.Title>Travel</Card.Title>
+              <Card.Text>
+                In the winter with UCPA to the Alps, with a diversion to
+                Hokkaido, Japan.
+              </Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
         </Col>
-      </Row>
-      <Row className="justify-content-center my-3">
-        <Col md="6">
-          <ListGroup>
-            <ListGroup.Item
-              action
-              href="https://getbootstrap.com"
-              target="_blank"
-            >
-              Bootstrap
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://react-bootstrap.github.io/"
-              target="_blank"
-            >
-              react-bootstrap
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://react-icons.netlify.com"
-              target="_blank"
-            >
-              react-icons
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://www.gatsbyjs.org/packages/gatsby-plugin-sass/"
-              target="_blank"
-            >
-              gatsby-plugin-sass
-            </ListGroup.Item>
-          </ListGroup>
-        </Col>
-      </Row>
-      <Row>
         <Col>
-          <p>
-            This starter also includes a navbar that sticks to the top of the
-            screen when the user scrolls past it, and a footer that stays at the
-            bottom of the screen.
-          </p>
-          <p>
-            For more documentation on these packages and how they work, please
-            refer to the pages linked in the list above.
-          </p>
+          <Card style={{ width: "20rem", minHeight: "25rem" }}>
+            <Card.Img variant="top" src={workImage} />
+            <Card.Body>
+              <Card.Title>Work</Card.Title>
+              <Card.Text>
+                Title varies but my main focus is systems and their data,
+                keeping 'em all together. Also throws in some analysis now and
+                then.
+              </Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card style={{ width: "20rem", minHeight: "25rem" }}>
+            <Card.Img variant="top" src={spareTimeImage} />
+            <Card.Body>
+              <Card.Title>Spare time</Card.Title>
+              <Card.Text>
+                #family #cat #friends #coding #learning #living
+              </Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
     </Container>
