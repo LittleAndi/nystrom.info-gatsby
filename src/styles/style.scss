@@ -5,19 +5,24 @@
 @import "layout";
 
 .header {
-  background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin-bottom: 3rem;
 }
 
-.header-home {
+.jumbotron {
+  position: relative;
   background: url(../images/skydive_2304x1032.webp) center no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 3rem;
+  padding: 18rem 0 22rem;
+  text-align: center;
 }
 
-.header h1 {
-  text-align: center;
+.jumbotron h1 {
   font-family: "Permanent Marker", cursive;
 }
 

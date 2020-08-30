@@ -25,10 +25,10 @@ const Layout = ({ children, pageInfo }) => (
     `}
     render={data => (
       <>
+        <Header siteTitle={data.site.siteMetadata.title} />
         <Container fluid className="px-0 main">
           <Row noGutters className="justify-content-center">
             <Col>
-              <Header siteTitle={data.site.siteMetadata.title} />
             </Col>
           </Row>
           <Row noGutters>
