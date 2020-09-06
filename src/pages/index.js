@@ -22,7 +22,7 @@ const IndexPage = () => (
     <Container className="text-center">
       <Row>
         <Col>
-          <Card style={{ width: "20rem", minHeight: "25rem" }}>
+          <Card className="indexCard">
             <Card.Img variant="top" src={travelImage} />
             <Card.Body>
               <Card.Title>Travel</Card.Title>
@@ -35,7 +35,7 @@ const IndexPage = () => (
           </Card>
         </Col>
         <Col>
-          <Card style={{ width: "20rem", minHeight: "25rem" }}>
+          <Card className="indexCard">
             <Card.Img variant="top" src={workImage} />
             <Card.Body>
               <Card.Title>Work</Card.Title>
@@ -44,12 +44,11 @@ const IndexPage = () => (
                 keeping 'em all together. Also throws in some analysis now and
                 then.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
             </Card.Body>
           </Card>
         </Col>
         <Col>
-          <Card style={{ width: "20rem", minHeight: "25rem" }}>
+          <Card className="indexCard">
             <Card.Img variant="top" src={spareTimeImage} />
             <Card.Body>
               <Card.Title>Spare time</Card.Title>

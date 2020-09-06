@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker');
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "layout";
 
@@ -52,4 +52,10 @@
   padding: 2px 5px;
   text-align: center;
   white-space: nowrap;
+}
+
+.indexCard {
+  width: 20rem;
+  text-align: left;
+  min-height: 25rem;
 }
