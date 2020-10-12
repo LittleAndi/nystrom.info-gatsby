@@ -1,5 +1,5 @@
 import React from "react"
-import { Row, Col, Container, ListGroup, Card, Button } from "react-bootstrap"
+import { Row, Col, Container, Card, Button } from "react-bootstrap"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -25,7 +25,7 @@ const IndexPage = () => (
                 In the winter with UCPA to the Alps, with a diversion to
                 Hokkaido, Japan.
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Link to="/travel" className="btn btn-primary">Go somewhere</Link>
             </Card.Body>
           </Card>
         </Col>
@@ -50,7 +50,7 @@ const IndexPage = () => (
               <Card.Text>
                 #family #cat #friends #coding #learning #living
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Button variant="primary">Have fun</Button>
             </Card.Body>
           </Card>
         </Col>
