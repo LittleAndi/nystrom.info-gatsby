@@ -10,14 +10,9 @@ import headerImage from "../images/skydive_2304x1032.webp"
 import travelImage from "../images/img_8074_318x180.webp"
 import workImage from "../images/kryssning_318x180.webp"
 import spareTimeImage from "../images/loro_parque_318x180.webp"
-import facebookIcon from "../images/Facebook.webp"
-import githubIcon from "../images/Github.webp"
-import instagramIcon from "../images/Instagram.webp"
-import linkedinIcon from "../images/Linkedin.webp"
-import twitterIcon from "../images/Twitter.webp"
 
 const IndexPage = () => (
-  <Layout pageInfo={{ pageName: "index" }}>
+  <Layout pageInfo={{ pageName: "index", header: { title: "I'm Lars Nyström", socialIcons: true }}}>
     <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
     <Container className="text-center">
       <Row>
