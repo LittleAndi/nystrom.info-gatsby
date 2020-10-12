@@ -28,8 +28,8 @@ const Layout = ({ children, pageInfo }) => (
         <Header headerInfo={
             { 
               siteTitle: data.site.siteMetadata.title,
-              title: pageInfo.header.title,
-              socialIcons: pageInfo.header.socialIcons
+              title: pageInfo?.header?.title,
+              socialIcons: pageInfo?.header?.socialIcons
             }
           } />
         <Container fluid className="px-0 main">
